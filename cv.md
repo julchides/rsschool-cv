@@ -1,4 +1,4 @@
-# CV Yuliia Sobolieva
+# CV
 
 **Name:** Yuliia Sobolieva
 
@@ -9,7 +9,7 @@
 **Discord:** Yuliia Sobolieva (@julchides)
 
 I'm a graphic designer with experience in creating website layouts, logos, various collages and vector illustrations, editing and retouching photos. 
-I want to become Fronte-End Developer.
+I want to become Front-End Developer.
 
 **Tech Skills**
 * _Website Visual Layout Design_
