@@ -1,15 +1,13 @@
-# CV
-
-**Name:** Yuliia Sobolieva
+# Yuliia Sobolieva
 
 **E-mail:** jul.chi.des@gmail.com
 
 **Telegram:** [@meisju](https://t.me/meisju)
 
-**Discord:** Yuliia Sobolieva (@julchides)
+**Githab:** [@julchides](https://github.com/julchides)
 
 I'm a graphic designer with experience in creating website layouts, logos, various collages and vector illustrations, editing and retouching photos. 
-I want to become Front-End Developer.
+I want to become a Front-End Developer.
 
 **Tech Skills**
 * _Website Visual Layout Design_
