@@ -1,1 +1,106 @@
-/*  */
+/* Variables */
+:root {
+  --text-main-color: #446382;
+  --text-minor-color: #A2B4C7;
+  --text-accent-color: #EC8282;
+  --text-light-color: #fff;
+  --background-site-color: #EDF0F2;
+  --background-block-light-color: #fff;
+  --background-block-dark-color: #C9D5E1;
+  --background-block-accent-color: #EC8282;
+  --background-block-accent-minor-color: #82B3EC;
+  --shadow-color: #446382;
+  --line-color: #DCE4E9;
+}
+
+/* Tag styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+  background-color: var(--background-site-color);
+  color: var(--text-main-color);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-main-color);
+}
+
+a:hover,
+a:focus {
+  color: var(--text-accent-color);
+}
+
+ul,ol li {
+  list-style: none;
+}
+
+/* Class styles */
+
+/* Gradients */
+.grad-down {
+  background: rgb(130,179,236);
+  background: linear-gradient(135deg, rgba(130,179,236,1) 0%, rgba(236,130,130,1) 100%);
+}
+
+.grad-up {
+  background: rgb(236,130,130);
+  background: linear-gradient(135deg, rgba(236,130,130,1) 0%, rgba(130,179,236,1) 100%);
+}
+
+/* Shadows */
+.shadow-block {
+  box-shadow: 0px 10px 15px rgba(68, 99, 130, 0.15);
+}
+
+.shadow-block-inner {
+  box-shadow: inset 0px 10px 15px rgba(68, 99, 130, 0.15);
+}
+
+.shadow-icon {
+  box-shadow: 0px 4px 4px rgba(68, 99, 130, 0.2);
+}
+
+.shadow-icon-inner {
+  box-shadow: inset 0px 4px 4px rgba(68, 99, 130, 0.2);
+}
+
+/* Aside styles */
+.cv-aside {
+  width: 320px;
+}
+
+/* Main styles */
+.cv-main {
+  width: 880px;
+}
+
+/* Footer styles */
+.cv-footer {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 70px 0;
+  color: var(--text-minor-color);
+  text-align: center;
+  font-size: 0.875em;
+  line-height: 1.25em;
+  border-top: 2px solid var(--line-color);
+}
+
+.cv-footer a {
+  color: var(--text-minor-color);
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.cv-footer p {
+  margin-top: 30px;
+}
