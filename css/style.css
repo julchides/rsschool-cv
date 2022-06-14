@@ -125,13 +125,29 @@ h3 {
   padding: 45px;
   border-radius: 50px 50px 0px 50px;
 }
-
 .cv-contacts {
   padding: 50px 0 40px 30px;
 }
 
 .cv-contacts li {
   margin-bottom: 10px;
+}
+
+.circle-grey {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  vertical-align:middle;
+  display:inline-block;
+  border-radius: 25px;
+  background-color: var(--background-site-color);
+}
+
+.circle-grey img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%); 
 }
 
 .cv-skills-light-block,
@@ -206,7 +222,7 @@ h3 {
 
 .cv-work,
 .cv-education {
-  padding: 60px;
+  padding: 60px 0 0 60px;
 }
 
 .date {
@@ -255,7 +271,7 @@ h3 {
   box-sizing: border-box;
   width: 720px;
   padding: 30px;
-  margin: 0 auto;
+  margin: 60px auto 0 auto;
   background-color: var(--background-block-light-color);
   border-radius: 75px;
   text-align: center;
@@ -274,7 +290,7 @@ h3 {
 
 .circle-red,
 .circle-blue {
-  box-sizing: border-box;
+  position: relative;
   width: 80px;
   height: 80px;
   border-radius: 40px;
@@ -282,7 +298,6 @@ h3 {
   text-align: center;
   color: var(--text-light-color);
   margin: 0 15px 0 40px;
-  padding-top: 32px;
 }
 
 .circle-red {
@@ -295,6 +310,14 @@ h3 {
   background-color: var(--accent-minor-color);
   font-size: 1.5em;
   font-weight: 700;
+}
+
+.circle-blue span,
+.circle-red span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
 }
 
 /* Footer styles */
