@@ -217,7 +217,8 @@ h3 {
 }
 
 .cv-work,
-.cv-education {
+.cv-education,
+.cv-code {
   padding: 60px 60px 0 60px;
 }
 
@@ -248,6 +249,7 @@ h3 {
   line-height: 1.25em;
   font-weight: 600;
 }
+
 
 .job-title,
 .science-title {
@@ -314,6 +316,24 @@ h3 {
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
+}
+
+.cv-code li {
+  margin: 20px;
+  border: 1px dotted var(--background-block-dark-color);
+  border-radius: 25px;
+}
+
+.example-title {
+  color: var(--accent-color);
+}
+
+.code-comment {
+  color: var(--text-minor-color);
+}
+
+.code-command {
+  color: var(--accent-minor-color);
 }
 
 /* Footer styles */
