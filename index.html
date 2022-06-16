@@ -11,8 +11,56 @@
   <title>Yuliia Sobolieva's CV</title>
 </head>
 <body>
- <!-- Page container -->
-  <div class="cv-content-container">
+<!-- Header -->
+  <header class="cv-header shadow-block">
+    <div class="cv-header-container">
+      <a href="./index.html" title="Yuliia Sobolieva / CV"><span class="name">Yuliia Sobolieva</span> <span class="cv">/ CV</span></a>
+<!-- Navigation -->
+      <nav>
+        <ul class="cv-nav-list">
+          <li>
+            <a href="#about" title="About">About</a>
+          </li>
+          <li>
+            <a href="#skills" title="Skills">Skills</a>
+          </li>
+          <li>
+            <a href="#projects" title="Projects">Projects</a>
+          </li>
+          <li>
+            <a href="#work" title="Work Experience">Work Experience</a>
+          </li>
+          <li>
+            <a href="#education" title="Education">Education</a>
+          </li>
+          <li>
+            <a href="#code" title="Code Examplet">Code Example</a>
+          </li>
+          <li>
+            <a href="#contacts" title="Contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+<!-- Additional contacts -->
+      <ul class="cv-header-contacts-list">
+        <li>
+          <a href="mailto:jul.chi.des@gmail.com" title="E-mail"><img src="./images/mail-icon-small.svg" alt="E-mail"></a>
+        </li>
+        <li>
+          <a href="https://t.me/meisju" title="Telegram"><img src="./images/telegram-icon-small.svg" alt="Telegram"></a>
+        </li>
+        <li>
+          <a href="https://github.com/julchides" title="GitHub"><img src="./images/github-icon-small.svg" alt="GitHub"></a>
+        </li>
+        <li>
+          <a href="https://discord.gg/MwW7XBdrQS" title="Discord"><img src="./images/discrod-icon-small.svg" alt="Discord"></a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+<!-- Content container -->
+  <div class="cv-content-container" id="home">
     
 <!-- Aside block -->
     <aside class="cv-aside">
@@ -24,7 +72,7 @@
       </section>
       
 <!-- Contacts -->
-      <section class="cv-contacts">
+      <section class="cv-contacts" id="contacts">
         <h2 hidden>Contacts</h2>
         <ul>
           <li>
@@ -47,7 +95,7 @@
       </section>
       
 <!-- Skills -->
-      <section>
+      <section class="cv-skills-container" id="skills">
         <h2 hidden>Skills</h2>
         <ul>
 
@@ -170,14 +218,14 @@
     <main class="cv-main">
       
 <!-- About -->
-      <section class="cv-about">
+      <section class="cv-about" id="about">
         <h3>Graphic & Web Designer</h3>
         <h1>Yuliia Sobolieva</h1>
         <p>I'm a graphic designer with experience in creating website layouts, logos, various collages, vector ilustrations, editing and retouching photos.  I'm currently studying Javascript and Front-End development at RS School. Also I’m studying UX/UI Design at ITVDN courses.</p>
       </section>
 
 <!-- Latest projects -->
-      <section class="cv-projects shadow-block">
+      <section class="cv-projects shadow-block" id="projects">
         <h2>Latest Projects</h2>
         <ul>
           <li>
@@ -199,7 +247,7 @@
       </section>
 
 <!-- Work experince -->
-      <section class="cv-work">
+      <section class="cv-work" id="work">
         <h2>Work Experience</h2>
         <ul>
           <li>
@@ -241,7 +289,7 @@
       </section>
 
 <!-- Education -->
-      <section class="cv-education">
+      <section class="cv-education" id="education">
         <h2>Education</h2>
         <ul>
           <li>
@@ -276,7 +324,7 @@
       </section>
 
 <!-- Code example -->
-      <section class="cv-code">
+      <section class="cv-code" id="code">
         <h2 class="code-title">Code Example :<span class="example-title"> 3 Ways to Print 'Hello, World!'</span></h2>
         <ul>
           <li>
