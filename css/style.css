@@ -22,6 +22,10 @@
     border: 0;
 }
 
+html {
+  scroll-behavior: smooth; 
+}
+
 body {
   background-color: var(--background-site-color);
   color: var(--text-main-color);
@@ -34,6 +38,7 @@ a {
   text-decoration: none;
   color: var(--text-main-color);
   font-weight: 700;
+  transition: color 0.5s;
 }
 
 a:hover,
