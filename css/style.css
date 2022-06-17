@@ -291,7 +291,7 @@ h3 {
 }
 
 .cv-projects li {
-  list-style: url('../images/arrow-grey.svg');
+  list-style: url('../assets/img/arrow-grey.svg');
   padding: 0 0 20px 10px;
 }
 
@@ -348,7 +348,7 @@ h3 {
 }
 
 .work-list li {
-  list-style: url('../images/arrow-grey.svg');
+  list-style: url('../assets/img/arrow-grey.svg');
   padding: 0 0 20px 10px;
 }
 
