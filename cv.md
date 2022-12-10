@@ -10,7 +10,7 @@
 
 **Discord:** meisju#3632
 
-I'm a graphic and web designer with experience in creating website layouts, logos, various collages, vector ilustrations, editing and retouching photos. Currently I'm studying Javascript and Front-End development at RS School. Also I’m selfstudying UX/UI Design. My goal is become Front-End Developer with UI/UX design skills.
+I'm a graphic and web designer with experience in creating website layouts, logos, various collages, vector ilustrations, editing and retouching photos. Currently I'm studying JavaScript and Front-End development at RS School. Also I’m selfstudying UX/UI Design. My goal is become Front-End Developer with UI/UX design skills.
 
 **Languages:**
 
@@ -27,7 +27,7 @@ I'm a graphic and web designer with experience in creating website layouts, logo
 - _Raster Graphics_
 - _HTML5_
 - _CSS3_
-- _Javascript_
+- _JavaScript_
 - _Git_
 
 ### App Skills
