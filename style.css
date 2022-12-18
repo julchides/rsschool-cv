@@ -57,9 +57,12 @@ a {
   text-decoration: none;
 }
 
-a,
+a {
+  transition: all 300ms ease;
+}
+
 svg {
-  transition: all 500ms ease;
+  transition: all 600ms ease-in;
 }
 
 a:hover,
@@ -105,12 +108,11 @@ a.button {
   border-radius: 2rem;
   color: var(--text-light);
   background: var(--accent-sec);
-  transition: all 500ms ease;
+  transition: all 800ms ease-in;
 }
 
 a.button:hover,
 a.button:focus {
-  font-size: 1.2em;
   background: var(--accent);
 }
 
@@ -208,7 +210,7 @@ a.button:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: show 0.5s;
+    animation: show 500ms;
   }
 
   #burger-menu:checked + [for="burger-menu"]::before {
@@ -235,6 +237,12 @@ a.button:focus {
   width: 30%;
   border-radius: 50%;
   border: 20px solid var(--photo-border);
+  transition: all 800ms ease;
+}
+
+.photo:hover {
+  border-radius: 0;
+  border-color: var(--back-dark);
 }
 
 .about-text {
