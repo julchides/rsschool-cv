@@ -10,7 +10,7 @@
 
 **Discord:** meisju#3632
 
-I'm a graphic and web designer with experience in creating website layouts, logos, various collages, vector ilustrations, editing and retouching photos. Currently I'm studying JavaScript and Front-End development at RS School. Also I’m selfstudying UX/UI Design. My goal is become Front-End Developer with UI/UX design skills.
+I'm a graphic designer with experience in creating website layouts, logos, various collages, vector ilustrations, editing and retouching photos. I'm currently studying Javascript and Front-End development at RS School and SheCodes. Also I’m selfstudying UX / UI Design. My goal is become Front-End Developer with UI/UX design skills.
 
 **Languages:**
 
@@ -81,6 +81,10 @@ _2000 - 2003_
 
 _2022 - Now_
 
+### SheCodes Workshops / Javascript/Front-End Development
+
+_2022 - Now_
+
 ### Petro Mohyla Black Sea National University / Computer Science
 
 _1998 - 2003_
@@ -89,6 +93,12 @@ _1998 - 2003_
 
 - [phishtrace.com](phishtrace.com) / Logo, Website Visual Layout
 - [murzoo.com.ua](murzoo.com.ua) / Logo, Website Visual Layout, Billboard
-- [wtfmastery.com.ua](wtfmastery.com.u) / Logo, Website Visual Layout, Billboard
+- [wtfmastery.com.ua](wtfmastery.com.ua) / Logo, Website Visual Layout
 - [office4rent.com.ua](office4rent.com.ua) / Logo, Website Visual Layout
 - [nikokurs.com.ua](nikokurs.com.ua) / Logo, Website Visual Layout
+
+## Sstudy Projects / Front-End Development
+
+- [cv for rss](https://julchides.github.io/rsschool-cv/) / HTML, CSS, JS
+- [shecodes pet landing page challenge](https://julchides.github.io/shecodes-pet-landing/) / HTML, CSS, JS
+- [final project shecodes basic](whttps://www.shecodes.io/workshops/shecodes-basics-c358a359-7059-4a9a-a004-9114a5f889cf/projects/1245692) / HTML, CSS, JS
