@@ -97,7 +97,7 @@ _1998 - 2003_
 - [office4rent.com.ua](office4rent.com.ua) / Logo, Website Visual Layout
 - [nikokurs.com.ua](nikokurs.com.ua) / Logo, Website Visual Layout
 
-## Sstudy Projects / Front-End Development
+## Study Projects / Front-End Development
 
 - [cv for rss](https://julchides.github.io/rsschool-cv/) / HTML, CSS, JS
 - [shecodes pet landing page challenge](https://julchides.github.io/shecodes-pet-landing/) / HTML, CSS, JS
