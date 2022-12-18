@@ -1,5 +1,282 @@
-h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  color: #cccccc;
+/* Variables */
+:root {
+  --accent: #eb544e;
+  --accent-sec: #2e5d62;
+  --link: #468d95;
+  --back-dark: #0d1f21;
+  --back-medium-dark: #153134;
+  --back-light: #f5f5f5;
+  --back-medium-light: #ffffff;
+  --back-date-light: #b2cfd2;
+  --text-dark: #617072;
+  --text-light: #ffffff;
+  --text-sec-dark: #486265;
+  --text-sec-light: #9ab9bc;
+  --heading-dark: #2e5d62;
+  --heading-light: #ffffff;
+  --section-title-dark: #1b3d41;
+  --section-title-medium: #e3ebec;
+  --section-title-light: #f1f4f4;
+  --prev-date: #b2cfd2;
+  --line-dark: #0d1f21;
+  --line-medium: #cfdfe1;
+  --line-light: #e8f0f1;
+  --photo-border: rgba(255, 255, 255, 0.1);
+  --burger-menu: rgba(13, 31, 33, 0.8);
+}
+
+/* General styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Maven Pro", sans-serif;
+  font-size: 1rem;
+  color: var(--text-dark);
+  background-color: var(--back-light);
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a,
+svg {
+  transition: all 500ms ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--accent);
+}
+
+strong {
+  font-weight: 600;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(0.75rem + (1 - 0.75) * ((100vw - 24rem)) / (120 - 24));
+  line-height: 1em;
+}
+
+.fullscreen {
+  min-height: 100vh;
+  display: flex;
+}
+
+.container {
+  width: 100vw;
+  padding: 5vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dash {
+  font-weight: 900;
+  color: var(--accent);
+}
+
+a.button {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  color: var(--text-light);
+  background: var(--accent-sec);
+  transition: all 500ms ease;
+}
+
+a.button:hover,
+a.button:focus {
+  font-size: 1.2em;
+  background: var(--accent);
+}
+
+/* Header */
+
+.header {
+  height: 4rem;
+  top: 0;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  z-index: 10;
+  background-color: var(--back-dark);
+}
+
+.page-title {
+  font-size: 1.25em;
+}
+
+.name {
+  color: var(--text-light);
+}
+
+.nav-list,
+.fast-contacts {
+  display: flex;
+  gap: 2vw;
+}
+
+.nav-list a {
+  font-weight: 500;
+  color: var(--accent-sec);
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  color: var(--accent);
+  font-size: 1.3em;
+}
+
+.fast-contacts svg {
+  fill: var(--accent-sec);
+}
+
+.fast-contacts svg:hover,
+.fast-contacts svg:focus {
+  transform: scale(1.2);
+  fill: var(--accent);
+}
+
+/* Burger menu */
+
+#burger-menu,
+[for="burger-menu"] {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  [for="burger-menu"] {
+    display: block;
+  }
+
+  [for="burger-menu"]::before {
+    color: var(--accent-sec);
+    font-size: 1.5rem;
+    content: "☰";
+  }
+
+  nav {
+    width: 100%;
+    padding: 1rem;
+    display: none;
+    position: fixed;
+    top: 4rem;
+    left: 0;
+    background: var(--burger-menu);
+    user-select: none;
+  }
+
+  .nav-list {
+    padding: 0 5vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1vw 5vw;
+  }
+
+  #burger-menu:checked + label + nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: show 0.5s;
+  }
+
+  #burger-menu:checked + [for="burger-menu"]::before {
+    content: "✕";
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* About */
+
+.about {
+  background: var(--back-medium-dark);
+}
+
+.photo {
+  width: 30%;
+  border-radius: 50%;
+  border: 20px solid var(--photo-border);
+}
+
+.about-text {
+  padding: 5vw;
+  color: var(--text-light);
+}
+
+.about-title {
+  font-size: 4em;
+  line-height: 1em;
+  font-weight: 500;
+  color: var(--heading-light);
+}
+
+.about-subtitle {
+  font-size: 1.5em;
+  font-weight: 500;
+  line-height: 1em;
+  color: var(--text-sec-dark);
+}
+
+.about-text p {
+  line-height: 1.5em;
+  margin: 1.5em 0;
+}
+
+.buttons-list {
+  display: flex;
+  gap: 1vw;
+  flex-wrap: wrap;
+}
+
+.buttons-list li {
+  margin: 0.875rem 0;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .photo {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .about-text {
+    margin-top: -10vh;
+  }
 }

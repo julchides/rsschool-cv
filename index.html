@@ -4,10 +4,136 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;900&family=Source+Code+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Jul Chi's CV</title>
+    <title>CV / Yuliia Sobolieva</title>
   </head>
   <body>
-    <h1>There will be Jul Chi's CV soon.</h1>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="page-title">
+            <a href="index.html">
+              CV <span class="dash">/</span>
+              <span class="name">Yuliia Sobolieva</span>
+            </a>
+          </div>
+          <input type="checkbox" id="burger-menu" />
+          <label for="burger-menu"></label>
+          <nav>
+            <ul class="nav-list">
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#skills">Skills</a>
+              </li>
+              <li>
+                <a href="#work">Work Experience</a>
+              </li>
+              <li>
+                <a href="#projects">Latest Projects</a>
+              </li>
+              <li>
+                <a href="#education">Education</a>
+              </li>
+              <li>
+                <a href="#code">Code Example</a>
+              </li>
+              <li>
+                <a href="#contacts">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="fast-contacts">
+            <li>
+              <a href="" title="telegram" target="_blank"
+                ><svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M24.512 27.735C24.9413 28.0086 25.4946 28.077 25.9879 27.909C26.4813 27.7398 26.8439 27.3606 26.9533 26.901C28.1119 22.0002 30.9225 9.59578 31.9771 5.13778C32.0571 4.80178 31.9238 4.45258 31.6305 4.22818C31.3372 4.00378 30.9305 3.93898 30.5678 4.06018C24.9773 5.92258 7.76035 11.7366 0.723181 14.0802C0.276524 14.229 -0.0141359 14.6154 0.00053046 15.039C0.0165301 15.4638 0.333856 15.8322 0.791179 15.9558C3.94711 16.8054 8.08968 17.9874 8.08968 17.9874C8.08968 17.9874 10.0256 23.2494 11.0349 25.9254C11.1616 26.2614 11.4536 26.5254 11.8389 26.6166C12.2229 26.7066 12.6336 26.6118 12.9202 26.3682C14.5415 24.9906 17.0481 22.8606 17.0481 22.8606C17.0481 22.8606 21.8107 26.0034 24.512 27.735ZM9.83231 17.3226L12.0709 23.9682L12.5682 19.7598C12.5682 19.7598 21.2174 12.7386 26.1479 8.73658C26.2919 8.61898 26.3119 8.42218 26.1919 8.28418C26.0733 8.14618 25.8546 8.11378 25.6906 8.20738C19.9761 11.4918 9.83231 17.3226 9.83231 17.3226Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" title="github" target="_blank"
+                ><svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_5_119)">
+                    <path
+                      d="M16.0018 1.37512e-06C7.16076 -0.00367088 0 7.34818 0 16.4223C0 23.5979 4.4795 29.6975 10.7179 31.9376C11.558 32.1542 11.4293 31.541 11.4293 31.1223V28.2763C6.57804 28.8602 6.38141 25.5625 6.05608 25.0117C5.39828 23.8586 3.84315 23.5648 4.3079 23.014C5.41258 22.4301 6.53871 23.1609 7.84359 25.1402C8.7874 26.5761 10.6285 26.3337 11.5616 26.095C11.7654 25.232 12.2015 24.4609 12.8021 23.8623C7.77567 22.9369 5.68071 19.7861 5.68071 16.0404C5.68071 14.2226 6.26343 12.5518 7.40744 11.204C6.67814 8.98233 7.47537 7.0801 7.58262 6.79734C9.6597 6.60638 11.819 8.325 11.987 8.46087C13.1668 8.13404 14.5146 7.96144 16.0232 7.96144C17.539 7.96144 18.8904 8.14138 20.0809 8.47188C20.4849 8.15607 22.4869 6.67983 24.4174 6.85977C24.5211 7.14253 25.3004 9.00069 24.614 11.193C25.7723 12.5444 26.3622 14.23 26.3622 16.0514C26.3622 19.8045 24.2529 22.9589 19.2122 23.8696C19.6439 24.3058 19.9867 24.8259 20.2206 25.3997C20.4545 25.9735 20.5747 26.5894 20.5742 27.2114V31.3427C20.6028 31.6732 20.5742 32 21.1105 32C27.4419 29.8077 32 23.664 32 16.426C32 7.34818 24.8357 1.37512e-06 16.0018 1.37512e-06Z"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_5_119">
+                      <rect width="32" height="32" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" title="discord" target="_blank"
+                ><svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M27.107 6.00999C25.0356 5.071 22.8208 4.38858 20.5052 4C20.2208 4.49814 19.8886 5.16815 19.6595 5.70115C17.198 5.34249 14.7591 5.34249 12.3429 5.70115C12.1139 5.16815 11.7741 4.49814 11.4871 4C9.16908 4.38858 6.95167 5.07351 4.88026 6.01497C0.70219 12.132 -0.430415 18.0972 0.135889 23.9776C2.907 25.9826 5.59255 27.2005 8.23277 27.9975C8.88465 27.1283 9.46605 26.2042 9.9669 25.2304C9.013 24.8792 8.09937 24.4459 7.2361 23.9427C7.46512 23.7783 7.68914 23.6065 7.90557 23.4296C13.1709 25.8157 18.8919 25.8157 24.0943 23.4296C24.3133 23.6065 24.5373 23.7783 24.7638 23.9427C23.898 24.4483 22.9818 24.8817 22.0279 25.2329C22.5288 26.2042 23.1077 27.1308 23.7621 28C26.4048 27.203 29.0929 25.9851 31.864 23.9776C32.5285 17.1607 30.7289 11.2503 27.107 6.00999ZM10.6842 20.3612C9.10363 20.3612 7.8074 18.9315 7.8074 17.1906C7.8074 15.4496 9.07595 14.0175 10.6842 14.0175C12.2926 14.0175 13.5887 15.4471 13.5611 17.1906C13.5636 18.9315 12.2926 20.3612 10.6842 20.3612ZM21.3157 20.3612C19.735 20.3612 18.4388 18.9315 18.4388 17.1906C18.4388 15.4496 19.7073 14.0175 21.3157 14.0175C22.9239 14.0175 24.2202 15.4471 24.1925 17.1906C24.1925 18.9315 22.9239 20.3612 21.3157 20.3612Z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <section class="fullscreen about" id="about">
+        <div class="container">
+          <img
+            class="photo"
+            src="./images/jul-photo.jpg"
+            alt="Yuliia Sobolieva"
+          />
+          <div class="about-text">
+            <h1 class="about-title">Yuliia Sobolieva</h1>
+            <h4 class="about-subtitle">
+              graphic designer / front-end developer
+            </h4>
+            <p>
+              I'm a graphic designer with experience in creating website
+              layouts, logos, various collages, vector ilustrations, editing and
+              retouching photos. I'm currently studying Javascript and Front-End
+              development at RS School and SheCodes. Also I’m selfstudying UX /
+              UI Design. <strong>My goal</strong> is is become Front-End
+              Developer with UI/UX design skills.
+            </p>
+            <ul class="buttons-list">
+              <li>
+                <a class="button" download="#">Download CV in PDF</a>
+              </li>
+              <li><a class="button" href="#contacts">Contact me</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
