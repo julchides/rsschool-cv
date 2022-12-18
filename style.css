@@ -75,7 +75,7 @@ strong {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-size: calc(0.75rem + (1 - 0.75) * ((100vw - 24rem)) / (120 - 24));
+  font-size: calc(0.875rem + (1 - 0.875) * ((100vw - 24rem)) / (120 - 24));
   line-height: 1em;
 }
 
@@ -119,6 +119,7 @@ a.button:focus {
 .header {
   height: 4rem;
   top: 0;
+  margin-bottom: -4rem;
   display: flex;
   align-items: center;
   position: sticky;
@@ -197,6 +198,12 @@ a.button:focus {
     gap: 1vw 5vw;
   }
 
+  .nav-list a:hover,
+  .nav-list a:focus {
+    color: var(--accent);
+    font-size: 1em;
+  }
+
   #burger-menu:checked + label + nav {
     display: flex;
     align-items: center;
@@ -236,28 +243,27 @@ a.button:focus {
 }
 
 .about-title {
-  font-size: 4em;
+  margin-bottom: 0.5rem;
+  font-size: calc(2.5rem + (4 - 2.5) * ((100vw - 24rem)) / (120 - 24));
   line-height: 1em;
   font-weight: 500;
   color: var(--heading-light);
 }
 
 .about-subtitle {
-  font-size: 1.5em;
+  font-size: calc(1.125rem + (1.5 - 1.125) * ((100vw - 24rem)) / (120 - 24));
   font-weight: 500;
-  line-height: 1em;
   color: var(--text-sec-dark);
 }
 
 .about-text p {
   line-height: 1.5em;
-  margin: 1.5em 0;
+  margin: 2em 0;
 }
 
 .buttons-list {
   display: flex;
-  gap: 1vw;
-  flex-wrap: wrap;
+  gap: 2vw;
 }
 
 .buttons-list li {
@@ -273,10 +279,15 @@ a.button:focus {
 
   .photo {
     width: 50%;
-    margin: 0 auto;
+    margin: 10vh auto;
   }
 
   .about-text {
     margin-top: -10vh;
+    text-align: center;
+  }
+
+  .buttons-list {
+    justify-content: center;
   }
 }
