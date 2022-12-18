@@ -697,11 +697,70 @@ a.button:focus {
   background: var(--back-medium-dark);
 }
 
-.contacts-st {
-  color: var(--section-title-dark);
+.contacts .container {
+  justify-content: center;
+}
+
+.contacts svg {
+  min-height: 2rem;
+  min-width: 2rem;
+  margin-right: var(--margin-list-item);
+  fill: var(--accent);
+  transition: all 500ms ease-in;
+}
+
+.contacts svg:hover {
+  fill: var(--accent-sec);
+}
+
+.contact-list {
+  margin-top: -13rem;
+  display: flex;
+  gap: 5vw;
+}
+
+.contact-sublist li {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+  color: var(--text-sec-dark);
 }
 
 /* Footer */
+
+.footer {
+  margin-top: -13rem;
+  padding: 2rem;
+  height: 13rem;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.25em;
+  color: var(--text-sec-dark);
+  background: var(--back-dark);
+  z-index: 1;
+}
+
+a.link-footer {
+  font-weight: 500;
+  color: var(--accent-sec);
+  transition: all 500ms ease-in;
+}
+
+a.link-footer:hover {
+  color: var(--accent);
+}
+
+.footer svg {
+  min-height: 2.5rem;
+  margin: 0 auto 1rem auto;
+  fill: var(--accent-sec);
+  transition: all 500ms ease-in;
+}
+
+.footer svg:hover {
+  fill: var(--accent);
+  transform: scale(1.2);
+}
 
 /* Responsive */
 @media screen and (max-width: 1380px) {
@@ -734,8 +793,9 @@ a.button:focus {
   }
 
   .work-list,
-  .education-list,
-  .projects-category-list {
+  .education img,
+  .projects-category-list,
+  .contact-list {
     gap: 5vh;
     margin-bottom: 15vh;
   }
@@ -744,6 +804,17 @@ a.button:focus {
 @media screen and (max-width: 768px) {
   .container {
     flex-wrap: wrap;
+  }
+
+  .section-title {
+    display: none;
+  }
+
+  .work-list,
+  .education img,
+  .projects-category-list,
+  .contact-list {
+    margin-bottom: 0;
   }
 
   .photo {
@@ -777,16 +848,19 @@ a.button:focus {
   }
 
   .lang-list,
-  .interests-list {
+  .interests-list,
+  .contact-list {
     flex-direction: column;
   }
 
-  .interests-list {
+  .interests-list,
+  .contact-list {
     margin-bottom: 1.25em;
     gap: 0;
   }
 
-  .interests-sublist li:last-child {
+  .interests-sublist li:last-child,
+  .contact-sublist li:last-child {
     margin-bottom: 0;
   }
 }
