@@ -104,6 +104,7 @@ h4 {
   font-size: var(--h4);
   line-height: 1.2em;
   font-weight: 500;
+  text-transform: lowercase;
   color: var(--text-sec-light);
 }
 
@@ -354,6 +355,7 @@ a.button:focus {
 }
 
 .skills-category-list {
+  width: 100%;
   display: flex;
   align-content: center;
   justify-content: space-between;
@@ -361,7 +363,7 @@ a.button:focus {
 }
 
 .skills-category-item {
-  width: 20vw;
+  flex-grow: 1;
 }
 
 .skills-category-item h3 {
@@ -571,12 +573,75 @@ a.button:focus {
 }
 
 /* Education */
+
 .education {
   background: var(--back-medium-light);
 }
 
+.education .container {
+  gap: 5vw;
+}
+
 .education-st {
   color: var(--section-title-medium);
+}
+
+.education svg {
+  fill: var(--back-light);
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: 3vw;
+  z-index: 1;
+}
+
+.education-item h3 {
+  font-size: var(--h3-small);
+}
+
+.education-item-heading {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.education-date {
+  min-width: 4.5rem;
+  min-height: 4.5rem;
+  max-width: 4.5rem;
+  max-height: 4.5rem;
+  padding: 0.5rem;
+  color: var(--text-light);
+  background: var(--back-date-light);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.education-title {
+  margin: var(--margin-list-item);
+}
+
+.current .education-date {
+  background: var(--accent-sec);
+}
+
+.current .education-date svg {
+  fill: var(--accent);
+}
+
+.current .education-date p:first-child {
+  color: var(--prev-date);
+}
+
+.sert {
+  width: 30vh;
 }
 
 /* Code */
@@ -607,7 +672,7 @@ a.button:focus {
   }
 
   .skills-category-item {
-    width: 40vw;
+    min-width: 35vw;
   }
 
   .languages,
@@ -646,12 +711,18 @@ a.button:focus {
     justify-content: center;
   }
 
-  .skills-category-item,
   .languages,
-  .interests,
-  .work {
+  .interests {
     width: 80vw;
     margin: 0 auto;
+  }
+
+  .skills-category-list {
+    flex-direction: column;
+  }
+
+  .skills-category-item {
+    min-width: 80vw;
   }
 
   .lang-list,
