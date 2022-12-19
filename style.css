@@ -824,6 +824,11 @@ a.link-footer:hover {
     gap: 5vh;
     margin-bottom: 15vh;
   }
+
+  .lang-item {
+    width: fit-content;
+    flex-grow: 1;
+  }
 }
 
 @media screen and (max-width: 768px) {
