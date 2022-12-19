@@ -218,7 +218,6 @@ a.button:hover,
 .nav-list a:hover,
 .nav-list a:focus {
   color: var(--accent);
-  font-size: 1.25em;
 }
 
 .fast-contacts svg {
