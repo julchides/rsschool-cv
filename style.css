@@ -832,6 +832,10 @@ a.link-footer:hover {
     gap: 5vh;
   }
 
+  .about .container {
+    padding: 5vw;
+  }
+
   .code .container {
     gap: 0;
   }
@@ -853,7 +857,7 @@ a.link-footer:hover {
 
   .photo {
     width: 50%;
-    margin: 10vh auto;
+    margin: 8vh auto 3vh auto;
   }
 
   .about-text {
