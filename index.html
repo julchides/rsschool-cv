@@ -816,6 +816,27 @@
         <section class="fullscreen code" id="code">
           <div class="container">
             <h2 class="section-title code-st">code<br />example</h2>
+            <div class="code-block">
+              <pre>
+                <code class="code-text">
+// Simple text change
+
+function changeText(event) {
+  event.preventDefault();
+  let userName = prompt("What is your name?");
+  let newText = document.querySelector("#text-change");
+  newText.innerHTML = `Hello, ${userName}! Text change was successful!`;
+}
+
+let buttonChangeText = document.querySelector("#button");
+buttonChangeText.addEventListener("click", changeText);
+                </code>
+              </pre>
+              <button class="button" id="button">Try it now</button>
+            </div>
+            <p class="code-preview-text" id="text-change">
+              This text will change, if you push the button and enter your name.
+            </p>
           </div>
         </section>
 
@@ -1032,5 +1053,6 @@
         </p>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
