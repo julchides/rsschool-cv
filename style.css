@@ -319,7 +319,7 @@ a.button:hover,
 
 .photo:hover {
   border-radius: 0;
-  border-color: var(--back-dark);
+  border-color: var(--accent-sec);
 }
 
 .about-text,
